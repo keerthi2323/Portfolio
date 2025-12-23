@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #111;
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(to right, #111, #333);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+        }
+
+        .hero-text span {
+            color: #00eaff;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #00eaff;
+            color: #111;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* SECTIONS */
+        .about, .skills, .projects, .contact {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .skill-box span {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #111;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        /* PROJECTS */
+        .project-card {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* CONTACT */
+        .contact p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <h2 class="logo">Korutla Keerthi</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Korutla Keerthi</span></h1>
+            <p>Frontend Developer | Web Designer | Tech Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate web developer from Warangal who loves building clean, 
+            responsive websites. I enjoy solving problems and creating digital experiences 
+            that feel smooth and intuitive.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React (Basic)</span>
+            <span>Git & GitHub</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A clean personal portfolio built using HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>Real-time weather app using API integration.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: yourmail@example.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </section>
+
+</body>
+</html>
